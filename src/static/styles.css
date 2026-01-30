@@ -90,8 +90,8 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin-left: 20px;
+  list-style: none;
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -101,9 +101,19 @@ section h3 {
   padding: 6px 8px;
   border-radius: 6px;
   margin-bottom: 8px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   color: #333;
+.participant-item span {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.participant-item span:hover {
+  color: #c62828;
+}
 }
 
 .no-participants {
